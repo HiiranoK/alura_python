@@ -1,5 +1,4 @@
 import random
-from re import A
 
 def main():
 

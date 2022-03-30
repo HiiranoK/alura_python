@@ -1,5 +1,5 @@
 import forca
-import jogo_adivinha_for
+import jogo_adivinha
 
 def escolhe_o_jogo():
     print("*********************************")
@@ -13,13 +13,13 @@ def escolhe_o_jogo():
     while(validacao != True):
         jogo = int(input("Informe o nº do jogo que deseja iniciar."))
         if( jogo < 1 or jogo > 2):
-            print("Opção inválida, tente novamente")
+            print("Opção inválida, tente novamente") 
         elif( jogo == 1):
             forca.main()
             validacao = True
         else:
-            jogo_adivinha_for.jogar()
+            jogo_adivinha.jogar()
             validacao = True
 
 if(__name__=="__main__"):   # esse comando compara se a váriável name tem o mesmo valor da variável main.
-    escolhe_o_jogo()                 # a variável name só recebe esse valor, caso o arquivo seja executado, ou seja, o resultado é falso ao usar o import.
+    escolhe_o_jogo()                 # a variável name só recebe esse valor, caso o arquivo seja executado, ou seja, o resultado é falso ao usar o import.1
